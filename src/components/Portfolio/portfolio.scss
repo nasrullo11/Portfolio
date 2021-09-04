@@ -1,0 +1,65 @@
+@import "../../global.scss";
+
+.portfolio {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    ul {
+        display: flex;
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        
+        li {
+            font-size: 14px;
+            margin-right: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &.active {
+                background-color: $mainColor;
+                color: white;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        flex-wrap: wrap;
+
+        .item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .table {
+                width: 100%;
+                border: 1px solid;
+
+                tr {
+                    th {
+                        border: 1px solid;
+                    }
+                }
+    
+                td {
+                    text-align: center;
+                    border: 1px solid;
+                }
+            }
+        }
+
+
+    }
+} 
